@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@types/lodash.clonedeep": "^4.5.9",
+    "lodash": "^4.17.21"
+  }
+}

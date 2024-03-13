@@ -1,0 +1,65 @@
+.matrix-box {
+    width:70px;
+    height:70px;
+    border: 2px solid silver;
+    background-color: #a093c7;
+
+}
+
+#matrix {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(70px*4 + 2px*8);
+    height: calc(70px*4 + 2px*8);
+    position: relative;
+}
+
+.wrap-box{
+    width: calc(65px + 2px*2);
+    height: calc(65px + 2px*2);
+    background-color:#7978cd;
+    border: 2px solid #527e93;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    position: absolute;
+    transition: all 0.3s;
+    animation: slide-up 0.4s ease;
+}
+.number_2 {background-color:#91c8f5;}
+.number_4 {background-color:#70b9f5;}
+.number_8 {background-color:#4fa5eb;}
+.number_16 {background-color:#309ffb;}
+.number_32 {background-color:#018dff;}
+.number_64 {background-color:#0266b7;}
+.number_128 {background-color:#01355f;}
+.number_256 {background-color:#032f53;}
+.number_512 {background-color:#020093;}
+.number_1024 {background-color:#1210bb;}
+.number_2048 {background-color:#3f3dcd;}
+
+
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.error-div {
+    position: absolute;
+    background-color: red;
+    color: #fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+}
